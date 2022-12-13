@@ -17,4 +17,11 @@ module.exports = ({ env }) => ({
     enabled: true,
     resolve: './src/plugins/strapi-stripe'
   },
+  chat: {
+    enabled: true,
+    resolve: `./src/plugins/chat`,
+    config: {
+      testConf: 3,
+    },
+  },
 });

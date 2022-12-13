@@ -1,5 +1,4 @@
 import Logo from 'assets/logo.svg';
-import { theme } from './extensions/theme';
 
 export default {
   config: {
@@ -26,11 +25,29 @@ export default {
       logo: Logo,
     },
     theme: {
-      theme
+      colors: {
+        // danger100: '#FF5722',
+        // danger700: '#ff6838',
+        // neutral0: '#2dd36f',
+        // neutral100: '#FF5722',
+        // neutral150: '#2dd36f',
+        // neutral200: '#343746',
+        // neutral500: '#f8f8f2',
+        // neutral600: '#f8f8f2',
+        // neutral700: '#f8f8f2',
+        // neutral800: '#ffffff',
+        // neutral900: '#282A36',
+        // primary100: '#FF5722',
+        // primary200: '#FF5722',
+        // primary500: '#FF5722',
+        // primary600: '#FF5722',
+        // primary700: '#FF5722',
+        // secondary100: '#e04d1e',
+        // success100: '#2dd36f',
+      },
     },
     head: {
-      favicon:
-        Logo,
+      favicon: Logo,
       title: 'Ion News Blog Backend',
     },
     menu: {
@@ -39,5 +56,7 @@ export default {
     tutorials: false,
     notifications: { release: false },
   },
-  bootstrap() { },
+  bootstrap() { 
+    console.log('bootstrap');
+  },
 };

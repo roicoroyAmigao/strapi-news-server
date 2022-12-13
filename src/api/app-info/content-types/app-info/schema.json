@@ -4,36 +4,24 @@
   "info": {
     "singularName": "app-info",
     "pluralName": "app-infos",
-    "displayName": "app-info"
+    "displayName": "app-info",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "logo": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "slider": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "title": {
       "type": "string"
-    },
-    "video_cover": {
-      "allowedTypes": [
-        "videos"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }

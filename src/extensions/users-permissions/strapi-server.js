@@ -31,7 +31,8 @@ module.exports = plugin => {
           'country',
           'postal_code',
           'phone',
-          'device_token'
+          'device_token',
+          'accepted_fcm'
         ]
       }
     );
@@ -52,7 +53,8 @@ module.exports = plugin => {
         'country',
         'postal_code',
         'phone',
-        'device_token'
+        'device_token',
+        'accepted_fcm'
       ] 
       }
     );

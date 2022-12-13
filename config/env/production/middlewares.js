@@ -14,7 +14,14 @@ module.exports = [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      headers: '*',
+      origin: ['*']
+    }
+  },
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
@@ -22,4 +29,14 @@ module.exports = [
   'strapi::session',
   "strapi::favicon",
   "strapi::public",
+  // {
+  //   name: 'global::test-middleware',
+  //   config: {
+  //     foo: 'bar',
+  //   },
+  // },
+  // {
+  //   resolve: './src/middlewares/test-middleware.js',
+  //   config: {},
+  // },
 ];
